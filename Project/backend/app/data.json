@@ -1,6 +1,6 @@
 {
     "about": {
-        "name": "Javin",
+        "first_name": "Javin",
         "last_name": "Carlson",
         "role": "Goat",
         "status": "Learning FastAPI",
