@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Miljövariabler
+.env
+
+# Node (för framtiden när vi kör frontend)
+node_modules/
+dist/
+
+# OS-specifika filer
+.DS_Store
