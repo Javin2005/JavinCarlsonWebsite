@@ -1,8 +1,13 @@
 from fastapi import FastAPI
 from .schemas import AboutMe, Project
 from typing import List
-
+import json
 app = FastAPI()
+
+
+def load_data():
+    with open("app/data.json","r") as file:
+        return json.load(file)
 
 
 @app.get("/")
@@ -16,24 +21,10 @@ def read_item(item_id: int):
 
 @app.get("/about", response_model=AboutMe)
 def get_about_me():
-    return {
-        "name": "Javin",
-        "role": "Datateknikstudent",
-        "status": "Learning FastAPI",
-        "hobbies": ["Programmering", "Träning", "Annat"]
-    }
+    data = load_data()
+    return data["about"]
 
 @app.get("/Projects", response_model = List[Project])
 def get_Projects():
-    return [{
-        "id": 1,
-        "title": "Min CV Sida",
-        "description": "Detta projektet som jag jobbar på nu!",
-        "tech_stack": ["FastAPI", "Python", "React"],
-        "github_url": "https://github.com/Javin2005/JavinCarlsonWebsite",
-        "live_url": None, 
-        "image_url": None,
-        "featured": True,
-        "category": "Webbutveckling",
-        "difficulty": 3
-    }]
+    data = load_data()
+    return data["projects"]

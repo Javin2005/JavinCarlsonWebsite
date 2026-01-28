@@ -1,0 +1,22 @@
+{
+    "about": {
+        "name": "Christian Javin",
+        "role": "Goat",
+        "status": "Learning FastAPI",
+        "hobbies": ["Programmering", "Träning", "Annat"]
+    },
+
+    "projects": [
+    {
+      "id": 1,
+      "title": "Min CV Sida",
+      "description": "Detta projektet som jag jobbar på nu!",
+      "tech_stack": ["FastAPI", "Python", "React"],
+      "github_url": "https://github.com/...",
+      "live_url": null,
+      "image_url": null,
+      "featured": true,
+      "category": "Webbutveckling",
+      "difficulty": 3
+    }]
+}
