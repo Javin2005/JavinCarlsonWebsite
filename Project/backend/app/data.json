@@ -1,6 +1,7 @@
 {
     "about": {
-        "name": "Christian Javin",
+        "name": "Javin",
+        "last_name": "Carlson",
         "role": "Goat",
         "status": "Learning FastAPI",
         "hobbies": ["Programmering", "Träning", "Annat"]

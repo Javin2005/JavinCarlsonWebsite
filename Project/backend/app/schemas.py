@@ -5,6 +5,7 @@ from typing import List
 
 class AboutMe(BaseModel):
     name: str
+    last_name: str
     role: str
     status: str
     hobbies: List[str]
