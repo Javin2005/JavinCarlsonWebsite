@@ -47,6 +47,9 @@ function App(){
               title={project.title}
               description={project.description}
               techStack={project.tech_stack}
+              difficulty={project.difficulty}
+              featured={project.featured}
+              githubUrl={project.github_url}
               />
           ))}
         </div>
