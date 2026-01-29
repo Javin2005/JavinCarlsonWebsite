@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+
 from .schemas import AboutMe, Project
 from typing import List
-from fastapi.middleware.cors import CORSMiddleware
 import json
 
 
@@ -25,17 +26,24 @@ def load_data():
 def read_root():
     return {"message": "Tjena! Mitt Api fungerar!"}
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int):
-    return {"item_id":item_id, "message": "Du sökte på et id!"}
-
-
 @app.get("/about", response_model=AboutMe)
 def get_about_me():
     data = load_data()
     return data["about"]
 
-@app.get("/Projects", response_model = List[Project])
+@app.get("/projects", response_model = List[Project])
 def get_Projects():
     data = load_data()
     return data["projects"]
+
+@app.get("/projects/{project_id}", response_model=Project)
+def get_project(project_id: int):
+    data = load_data()
+    projects = data["projects"]
+
+    project = next((p for p in projects if p["id"] == project_id), None)
+
+    if project is None:
+        raise HTTPException(status_code=404, detail="Project could not be found")
+    
+    return project

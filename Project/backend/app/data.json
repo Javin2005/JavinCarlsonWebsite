@@ -19,5 +19,19 @@
       "featured": true,
       "category": "Webbutveckling",
       "difficulty": 3
+    },
+    {
+      "id": 2,
+      "title": "Sudoku-Solver",
+      "description": "Första större Java projekt",
+      "tech_stack": ["Java"],
+      "github_url": null,
+      "live_url": null,
+      "image_url": null,
+      "featured": false,
+      "category": "Webbutveckling",
+      "difficulty": 1
     }]
+
+ 
 }
