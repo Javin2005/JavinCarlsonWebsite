@@ -1,23 +1,22 @@
-# OS-specifikt (Mac skapar dessa överallt)
+# OS-specifikt
 .DS_Store
 Thumbs.db
 
-# Backend (Python / FastAPI)
-backend/venv/
+# Backend (Letar i alla undermappar efter venv och pycache)
+**/venv/
 **/__pycache__/
 *.py[cod]
 *$py.class
 .env
-backend/.pytest_cache/
 
-# Frontend (Node / React)
-frontend/node_modules/
-frontend/dist/
-frontend/dist-ssr
+# Frontend (Letar i alla undermappar efter node_modules och dist)
+**/node_modules/
+**/dist/
+**/dist-ssr
 *.local
 .eslintcache
 
-# IDE / Editor
+# IDE
 .vscode/
 .idea/
 *.swp

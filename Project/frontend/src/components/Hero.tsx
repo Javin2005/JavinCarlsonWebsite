@@ -1,12 +1,12 @@
 interface HeroProps {
-    firstName: string,
-    lastName: string,
-    role: string,
+    firstName: string;
+    lastName: string;
+    role: string;
 }
 
 export default function Hero({ firstName, lastName, role}: HeroProps) {
     return (
-        <section className="h-[70vh] flex flex-col items-center justify-center text-center">
+        <section className="h-[50vh] flex flex-col items-center justify-center text-center">
             <h1 className="text-7xl font-black tracking-tighter uppercase">
                 {firstName} <span className="text-blue-500">{lastName}</span>
             </h1>
