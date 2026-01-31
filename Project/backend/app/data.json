@@ -29,9 +29,49 @@
       "live_url": null,
       "image_url": null,
       "featured": false,
-      "category": "Webbutveckling",
+      "category": "Backend",
       "difficulty": 1
-    }]
+    },
+  
+    {
+      "id": 3,
+      "title": "Banken",
+      "description": "Första större scala projekt",
+      "tech_stack": ["Scala"],
+      "github_url": null,
+      "live_url": null,
+      "image_url": null,
+      "featured": false,
+      "category": "Backend",
+      "difficulty": 4
+    },
+
+    {
+      "id": 4,
+      "title": "Java-V-Python",
+      "description": "En jämnförelse mellan java och python effektivitet",
+      "tech_stack": ["Scala","Java","R"],
+      "github_url": null,
+      "live_url": null,
+      "image_url": null,
+      "featured": true,
+      "category": "Sorterings algorytmer",
+      "difficulty": 4
+    },
+    {
+      "id": 5,
+      "title": "Irritext",
+      "description": "ett text spel",
+      "tech_stack": ["Scala"],
+      "github_url": null,
+      "live_url": null,
+      "image_url": null,
+      "featured": true,
+      "category": "Backend",
+      "difficulty": 2
+    }
+  
+  ]
 
  
 }
