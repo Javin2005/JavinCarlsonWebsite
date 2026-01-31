@@ -2,6 +2,7 @@ import { useState,useEffect } from "react"
 import Hero from './components/Hero'
 import Connection from "./components/Connection"
 import ProjectCard from "./components/ProjectCard"
+import Navibar from "./components/NaviBar"
 
 function App(){
 
@@ -18,7 +19,7 @@ function App(){
     })
     .catch(err => console.error("Kunde inte nå backend:", err))
 
-    fetch("http://127.0.0.1:8000/Projects")
+    fetch("http://127.0.0.1:8000/projects")
     .then(res => res.json())
     .then(data => setProjects(data))
     
@@ -27,6 +28,8 @@ function App(){
   return (
 
     <div className="min-h-screen bg-slate-900 text-white relative">
+
+      <Navibar />
 
       <Connection connected={about !== null}/>
 
