@@ -54,7 +54,7 @@
       "github_url": null,
       "live_url": null,
       "image_url": null,
-      "featured": true,
+      "featured": false,
       "category": "Sorterings algorytmer",
       "difficulty": 4
     },
@@ -66,9 +66,22 @@
       "github_url": null,
       "live_url": null,
       "image_url": null,
-      "featured": true,
+      "featured": false,
       "category": "Backend",
       "difficulty": 2
+    },
+
+    {
+      "id": 6,
+      "title": "BlackHole",
+      "description": "Trying to simulate a black hole through c",
+      "tech_stack": ["C++"],
+      "github_url": "https://github.com/Javin2005/BLACKED_hole",
+      "live_url": null,
+      "image_url": null,
+      "featured": true,
+      "category": "Backend",
+      "difficulty": 5
     }
   
   ]
