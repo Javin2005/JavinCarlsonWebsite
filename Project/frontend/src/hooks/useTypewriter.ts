@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 
 
-export function useTypewriter(text: string, speed: number = 80) {
+export function useTypewriter(text: string, speed: number = 200) {
     
     const[displayed, setDisplayed] = useState<string>("")
     useEffect(() => {
@@ -14,7 +14,7 @@ export function useTypewriter(text: string, speed: number = 80) {
             setDisplayed(text.slice(0,i+1))
             i+=1
 
-            if(i<text.length){
+            if(i>=text.length){
                 clearInterval(interval)
             }
         },speed)
